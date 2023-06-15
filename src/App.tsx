@@ -1,10 +1,11 @@
 import React from 'react';
+import Formulario from './components/Form';
 
 function App() {
   return (
-      <h1>
-        ola mundo
-      </h1>
+      <>
+        <Formulario/>
+      </>
 
   );
 }
