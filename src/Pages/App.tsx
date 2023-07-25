@@ -23,7 +23,7 @@ function App() {
       <div className={style.AppStyle}>
         <Formulario setTarefas={setTarefas} />
         <Lista selectionaTarefa={selectionaTarefa}  tarefas={tarefas}  />
-        <Cronometro/>
+        <Cronometro selecionado={selecionado}/>
       </div>
   );
 }
