@@ -1,14 +1,11 @@
+import { ITarefas } from "../../../types/tarefa";
 import style from "../style.module.scss";
 
-interface ItemProps {
-  tarefa: string;
-  tempo: string;
-  key: number;
-}
 
-export default function Item({ tarefa, tempo, key }: ItemProps) {
+
+export default function Item({ tarefa, tempo,  selecionado, completado, id }: ITarefas) {
   return (
-    <li key={key} className={style.item}>
+    <li key={id} className={style.item}>
       <h3> {tarefa} </h3>
       <span> {tempo} </span>
     </li>
